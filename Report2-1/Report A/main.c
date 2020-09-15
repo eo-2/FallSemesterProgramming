@@ -3,7 +3,7 @@
 	
 /* main function
 * 2020.09.09
-* made by prof. Eo
+* made by  Eo
 */
 
 
