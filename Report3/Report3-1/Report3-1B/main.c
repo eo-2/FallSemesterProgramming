@@ -1,22 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void)
 {
-	int age = 25, chest = 95;
-	int size;
-	if (age < 20)
+	int n;
+	printf("정수 입력:");
+	scanf("%d", &n);
+	switch (n % 3)
 	{
-		if (chest < 85) size = 'S';
-		else if (chest < 95) size = 'M';
-		else size = 'L';
-	}
-	else
+	case 0:
 	{
-		if (chest < 90) size = 'S';
-		else if (chest < 100) size = 'M';
-		else size = 'L';
+		printf("거짓");
+		break;
 	}
-	printf("사이즈는 %c입니다.\n", size);
+	default:
+	{
+		printf("참");
+		break;
+	}
+	}
 	return 0;
 }
