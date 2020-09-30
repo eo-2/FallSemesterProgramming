@@ -5,31 +5,28 @@
 
 int main(void)
 {
-	double a;
-	double b;
-	double sum, sub, mul;
-	double division;
-	int res;
+	double a = 0;
+	double b = 0;
 
-	a = 7.0000;
-	b = 3.0000;
-	sum = a + b;
-	sub = a - b;
-	mul = a * b;
-	division = a / b;
-	res = (int)a % (int)b;
-	
 
-	printf("aÀÇ °ª :%lf, bÀÇ °ª :%lf\n", a, b);
-	printf("µ¡¼À : %lf\n", sum);
-	printf("»¬¼À : %lf\n", sub);
-	printf("°ö¼À : %lf\n", mul);
-	printf("³ª´°¼À : %.4f\n", division);
-	printf("¸ò :%d, ³ª¸ÓÁö%d\n", (int)division, res);
+	printf("enter the number a and b: ");
+	double C = scanf("%lf%lf", &a, &b);
+
+	double SUM = a + b;
+	double SUB = a - b;
+	double MUL = a * b;
+	double DIV = a / b;
+	int Res = (int)a % (int)b;
+
+	printf("µ¡¼À : %lf\n", SUM);
+	printf("»¬¼À : %lf\n", SUB);
+	printf("°ö¼À : %lf\n", MUL);
+	printf("³ª´°¼À : %.4lf\n", DIV);
+	printf("¸ò :%d, ³ª¸ÓÁö%d\n", (int)DIV, Res);
 
 
 	system("pause..");
 	return 0;
 
 
-}
+} 
