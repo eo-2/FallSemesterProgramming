@@ -53,5 +53,5 @@ int main(void)
 			printf("%.4lf도 입니다.\n", nE);
 		}
 	}
-	return 0;
+	return 2;
 }
