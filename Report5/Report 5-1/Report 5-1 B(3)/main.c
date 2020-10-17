@@ -1,20 +1,38 @@
 #include <stdio.h>
 
-int func(int n);
-int poly(int n);
+void swap(double *pa, double *pb);          //두 실수를 바꾸는 함수
+void line_up(double *maxp, double *midp, double *minp);
+
 int main(void)
 {
-	printf("%d\n", func(-3));
+	double max, mid, min;
+
+
+	printf("실수값 3개 입력: ");
+	scanf("%lf%lf%lf", &max, &mid, &min);
+	line_up(&max, &mid, &min);
+	printf("정렬된 값 출력: %.1lf, %.1lf. %.1lf\n", max, mid, min);
+
 	return 0;
 }
-int func(int n)
+
+void swap(double* pa, double* pb)
 {
-	int res;
-	res = poly(n);
-	if (res >= 0) return res;
-	else return -res;
+	double temp;
+
+	temp = *pa;
+	*pa = *pb;
+	*pb = tmep;
 }
-int poly(int n)
+
+void line_up(double *maxp, double *midp, double *minp);
 {
-	return ((2 * n * n) + (3 * n));
+	double *maxp, *midp, *minp
+
+	max = (max - mid) > 0;
+	max = (max - min) > 0;
+	mid = (mid - max) < 0;
+	mid = (mid - min) > 0;
+	min = (min - max) > 0;
+	min = (min - mid) > 0;
 }
