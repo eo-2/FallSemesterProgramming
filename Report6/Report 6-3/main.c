@@ -54,7 +54,7 @@ void print_nums(int* lotto_nums)
 	printf("로또 번호: ");
 	for (i = 0; i < 6; i++)
 	{
-		printf("%d ", lotto_nums[i]);
+		printf("%d ", lotto_nums[i]);						// lotto_nums[i]에 저장된 숫자를 출력
 
 	}
 }

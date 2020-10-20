@@ -58,7 +58,7 @@ void print_nums(int* lotto_nums)
 	printf("로또 번호: ");
 	for (i = 0; i < 6; i++)
 	{
-		printf("%d ", lotto_nums[i]);
+		printf("%d ", lotto_nums[i]);							// 입력한 로또 번호 6개를 출력
 
 	}
 }
@@ -73,12 +73,12 @@ int b_rand(int* lotto_nums)
 
 	srand((unsigned int)time(NULL));                               // 난수를 발생을 양수형으로 선언           
 	
-	for (i = 0; i < 7; i++)
+	for (i = 0; i < 7; i++)											// 보너스 숫자까지 해서 7번 반복
 	{
-		lotto_Nums[i] = rand() % 46;
+		lotto_Nums[i] = rand() % 46;								// 45이하의 랜덤 숫자를 lotto_Nums[i]에 저장
 		for (j = 0; j < i; j++)
 		{
-			if (lotto_Nums[i] == lotto_Nums[j])
+			if (lotto_Nums[i] == lotto_Nums[j])						// 랜덤으로 만든 수 중에 같은 수는 취소하고 다시 실행
 			{
 				i--;
 				break;
@@ -86,30 +86,30 @@ int b_rand(int* lotto_nums)
 		}
 	}
 	
-	printf("\n로또 번호: ");
+	printf("\n로또 번호: ");										
 	for (i = 0; i < 6; i++)
 	{
-		printf("%d ", lotto_Nums[i]);
+		printf("%d ", lotto_Nums[i]);								// 저장된 숫자를 출려
 	}
-    printf("보너스 번호: %d", lotto_Nums[i]);
+    printf("보너스 번호: %d", lotto_Nums[i]);						// 마지막에 저장된 보너스 숫자를 출력
 
 	for (i = 0; i < 7; i++)
 	{
 		for (j = 0; j < 7; j++)
 		{
-			if (lotto_nums[j] == lotto_Nums[A])
+			if (lotto_nums[j] == lotto_Nums[A])						//입력한 숫자와 출력 받은 숫자를 비교해서 같으면 B에 1을 더하면서 저장
 			{
 				B++;
 			}
 		}
-		A++;
+		A++;														// 진행하면서 A에 1을 더하면서 저장
 	}
 
-	if (B == 6)
+	if (B == 6)														// B에 저장된 숫자만큼 맞는 문장 출력
 	{
 		printf("\n1등입니다.");
 	}
-	else if (B == 5)
+	else if (B == 5)												
 	{
 		printf("\n2등입니다.");
 	}
