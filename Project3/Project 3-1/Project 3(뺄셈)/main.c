@@ -48,7 +48,7 @@ int main(void)
 			printf("\n");
 		}
 		printf("\n");
-		printf("Sub 행렬: \n");								//Sum행렬 출력
+		printf("Sub 행렬: \n");								//Sub행렬 출력
 		for (i = 0; i < n; i++)
 		{
 			for (j = 0; j < n; j++)

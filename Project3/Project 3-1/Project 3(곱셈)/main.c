@@ -50,7 +50,7 @@ int main(void)
 			printf("\n");
 		}
 		printf("\n");
-		printf("Mul 행렬: \n");								//Sum행렬 출력
+		printf("Mul 행렬: \n");								//Mul행렬 출력
 		for (i = 0; i < n; i++)
 		{
 			for (j = 0; j < n; j++)
